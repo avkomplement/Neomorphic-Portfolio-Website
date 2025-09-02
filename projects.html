@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects — Avnoor</title>
+  <meta name="description" content="Projects by Avnoor — Student • Future Engineer • Maker" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#e0e0e0" id="meta-theme-color" />
+  <link rel="preload" href="./css/style.css" as="style" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/project-image-placeholder.css" />
+</head>
+
+<body class="page-fade">
+  <!-- Navbar (same as index) -->
+  <header class="navbar glass surface" role="banner" aria-label="Main">
+    <div class="container nav-inner">
+      <a class="brand nm-pill" href="./index.html#home" aria-label="Go to home">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <strong>Avnoor</strong>
+      </a>
+      <nav class="nav" role="navigation" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a class="nav-link nm-pill" href="./index.html#home">Home</a></li>
+          <li><a class="nav-link nm-pill" href="./index.html#about">About</a></li>
+          <li><a class="nav-link nm-pill" href="./index.html#skills">Skills</a></li>
+          <li><a class="nav-link nm-pill active" href="./projects.html">Projects</a></li>
+          <li><a class="nav-link nm-pill" href="./index.html#experience">Experience</a></li>
+          <li><a class="nav-link nm-pill" href="./index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-ctas">
+        <button id="themeToggle" class="icon-btn nm-circle" aria-label="Toggle dark/light mode" title="Toggle theme">
+          <span class="icon-sun" aria-hidden="true"></span>
+          <span class="icon-moon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Purple gradient banner (adapts to theme) -->
+    <section class="banner">
+      <div class="container banner-inner">
+        <h1 class="banner-title">Projects</h1>
+      </div>
+    </section>
+
+    <!-- Project Grid (5 cards) -->
+    <section class="section" aria-labelledby="all-projects-title">
+      <div class="container">
+        <h2 id="all-projects-title" class="section-title">All Projects</h2>
+
+        <div class="projects-grid">
+          <!-- 1: PyTracing Maze Game -->
+          <article class="project-card surface tilt reveal">
+            <div class="project-image-placeholder nm-soft" style="width:100%;height:160px;display:flex;align-items:center;justify-content:center;background:var(--primary-bg);border-radius:var(--radius);margin-bottom:18px;box-shadow:var(--elev-sm);overflow:hidden;">
+              <img src="./assets/pytracer_ss.jpg" alt="PyTracing Maze Game Screenshot" style="max-width:100%;max-height:100%;object-fit:cover;border-radius:var(--radius);" />
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">PyTracing Maze Game</h3>
+              <p class="project-desc">Python, Pygame, and NumPy ray-traced maze with dynamic lighting and enemy pursuit.</p>
+              <ul class="tags"><li>Python</li><li>Pygame</li><li>NumPy</li></ul>
+            </div>
+            <div class="project-actions">
+              <a class="btn nm-btn ghost" href="#" target="_blank" rel="noopener" data-press>Demo</a>
+              <a class="btn nm-btn" href="#" target="_blank" rel="noopener" data-press>GitHub</a>
+            </div>
+          </article>
+
+          <!-- 2: CHASS AI -->
+          <article class="project-card surface tilt reveal">
+            <div class="project-image-placeholder nm-soft" style="width:100%;height:160px;display:flex;align-items:center;justify-content:center;background:var(--primary-bg);border-radius:var(--radius);margin-bottom:18px;box-shadow:var(--elev-sm);color:var(--text-muted);font-size:1.1rem;">
+              <span>Project Image</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">CHASS AI</h3>
+              <p class="project-desc">Lightweight AI assistant prototype for research & study workflows with clean UI.</p>
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>JS</li></ul>
+            </div>
+            <div class="project-actions">
+              <a class="btn nm-btn ghost" href="#" target="_blank" rel="noopener" data-press>Demo</a>
+              <a class="btn nm-btn" href="#" target="_blank" rel="noopener" data-press>GitHub</a>
+            </div>
+          </article>
+
+          <!-- 3: Thrive -->
+          <article class="project-card surface tilt reveal">
+            <div class="project-image-placeholder nm-soft" style="width:100%;height:160px;display:flex;align-items:center;justify-content:center;background:var(--primary-bg);border-radius:var(--radius);margin-bottom:18px;box-shadow:var(--elev-sm);overflow:hidden;">
+              <img src="./assets/thrive.png" alt="Thrive Study Tracker Screenshot" style="max-width:100%;max-height:100%;object-fit:cover;border-radius:var(--radius);" />
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Thrive — Study Tracker</h3>
+              <p class="project-desc">Habit & wellness micro-dashboard with streaks, timers, and neumorphic controls.</p>
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>JS</li></ul>
+            </div>
+            <div class="project-actions">
+              <a class="btn nm-btn ghost" href="#" target="_blank" rel="noopener" data-press>Demo</a>
+              <a class="btn nm-btn" href="#" target="_blank" rel="noopener" data-press>GitHub</a>
+            </div>
+          </article>
+
+          <!-- 4: Neumorph UI Kit -->
+          <article class="project-card surface tilt reveal">
+            <div class="project-image-placeholder nm-soft" style="width:100%;height:160px;display:flex;align-items:center;justify-content:center;background:var(--primary-bg);border-radius:var(--radius);margin-bottom:18px;box-shadow:var(--elev-sm);color:var(--text-muted);font-size:1.1rem;">
+              <span>Project Image</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Neumorph UI Kit</h3>
+              <p class="project-desc">Reusable HTML/CSS/JS component kit for soft, tactile interfaces with theming.</p>
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>JS</li></ul>
+            </div>
+            <div class="project-actions">
+              <a class="btn nm-btn ghost" href="#" target="_blank" rel="noopener" data-press>Demo</a>
+              <a class="btn nm-btn" href="#" target="_blank" rel="noopener" data-press>GitHub</a>
+            </div>
+          </article>
+
+          <!-- 5: Micro Interactions Lab -->
+          <article class="project-card surface tilt reveal">
+            <div class="project-image-placeholder nm-soft" style="width:100%;height:160px;display:flex;align-items:center;justify-content:center;background:var(--primary-bg);border-radius:var(--radius);margin-bottom:18px;box-shadow:var(--elev-sm);color:var(--text-muted);font-size:1.1rem;">
+              <span>Project Image</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Micro Interactions Lab</h3>
+              <p class="project-desc">A playground of small UI motion experiments using pure CSS + a bit of JS.</p>
+              <ul class="tags"><li>CSS</li><li>Animations</li></ul>
+            </div>
+            <div class="project-actions">
+              <a class="btn nm-btn ghost" href="#" target="_blank" rel="noopener" data-press>Demo</a>
+              <a class="btn nm-btn" href="#" target="_blank" rel="noopener" data-press>GitHub</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer surface nm-inset">
+    <div class="container footer-inner">
+      <small>© <span id="year"></span> Avnoor • Built with HTML, CSS & JS • Neumorphic UI</small>
+    </div>
+  </footer>
+
+  <script defer src="./js/script.js"></script>
+
+  <noscript>
+    <style>
+      .reveal { opacity: 1 !important; transform: none !important; filter: none !important; }
+    </style>
+  </noscript>
+</body>
+</html>

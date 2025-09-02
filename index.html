@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Avnoor — Portfolio</title>
+  <meta name="description" content="Portfolio of Avnoor — Student • Future Engineer • Maker" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#e0e0e0" id="meta-theme-color" />
+  <link rel="preload" href="/css/style.css" as="style" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/flowboat-btn.css" />
+</head>
+
+<body>
+  <!-- ======================= NAVBAR ======================= -->
+  <header class="navbar glass surface" role="banner" aria-label="Main">
+    <div class="container nav-inner">
+      <a class="brand nm-pill" href="#home" aria-label="Go to home">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <strong>Avnoor</strong>
+      </a>
+
+      <nav class="nav" role="navigation" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a class="nav-link nm-pill" href="#home">Home</a></li>
+          <li><a class="nav-link nm-pill" href="#about">About</a></li>
+          <li><a class="nav-link nm-pill" href="#skills">Skills</a></li>
+          <li><a class="nav-link nm-pill" href="projects.html">Projects</a></li>
+          <li><a class="nav-link nm-pill" href="#experience">Experience</a></li>
+          <li><a class="nav-link nm-pill" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-ctas">
+        <button id="themeToggle" class="icon-btn nm-circle" aria-label="Toggle dark/light mode" title="Toggle theme">
+          <!-- sun / moon rendered in CSS -->
+          <span class="icon-sun" aria-hidden="true"></span>
+          <span class="icon-moon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="home">
+    <!-- ======================= HERO ======================= -->
+    <section class="section hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <h1 id="hero-title" class="hero-title">
+            Hi, I’m <span class="accent">Avnoor</span>
+          </h1>
+          <p class="hero-subtitle">
+            <span aria-hidden="true">I’m a</span>
+            <span class="role-rotator" aria-live="polite">
+              <span id="roleCurrent" class="role role-enter">Student</span>
+            </span>
+          </p>
+
+          <div class="hero-ctas">
+            <a href="#projects" class="btn nm-btn" data-press>
+              <span>View Projects</span>
+            </a>
+            <a href="mailto:avnoor879@gmail.com" class="btn nm-btn ghost" data-press>
+              <span>Contact Me</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual surface nm-blob reveal" aria-hidden="true">
+          <!-- Decorative neumorphic orb -->
+          <div class="orb"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= ABOUT ======================= -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <h2 id="about-title" class="section-title">About Me</h2>
+        <div class="about-grid">
+          <div class="about-photo surface nm-inset reveal" role="img" aria-label="Portrait placeholder of Avnoor">
+            <div class="avatar"></div>
+          </div>
+          <article class="about-text surface reveal">
+            <p>
+              Hi, I’m <strong>Avnoor</strong> — a curious student, future engineer, and maker with a passion for building creative tech solutions. I’m currently a Grade 12 student at Cameron Heights Collegiate Institute in Kitchener, Ontario, preparing to pursue studies in computer science and engineering.
+            </p>
+            <p>
+              From coding ray-traced maze games in Python to designing software-savvy website structures for local businesses, I love turning ideas into real, functional projects. I thrive at the intersection of software, design, and problem-solving, whether it’s developing interactive games, crafting sleek UI/UX experiences, or collaborating on entrepreneurial ventures.
+            </p>
+            <p>
+              Always eager to learn, build, and grow, I’m exploring opportunities to expand my skills, gain mentorship, and contribute to innovative projects that make an impact.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= STATUS (Right now I am probably...) ======================= -->
+    <section class="section" id="status" aria-labelledby="status-title">
+      <div class="container">
+        <div class="status-card surface reveal">
+          <header class="status-head">
+            <h2 id="status-title" class="status-title">Right now I am probably…</h2>
+
+            <!-- Segmented filter -->
+            <div class="status-filter" role="tablist" aria-label="Status categories">
+              <button class="seg-btn nm-pill is-active" role="tab" aria-selected="true" data-category="all">All</button>
+              <button class="seg-btn nm-pill" role="tab" aria-selected="false" data-category="pro">Professional</button>
+              <button class="seg-btn nm-pill" role="tab" aria-selected="false" data-category="student">Student</button>
+              <button class="seg-btn nm-pill" role="tab" aria-selected="false" data-category="humor">Humor</button>
+              <button class="seg-btn nm-pill" role="tab" aria-selected="false" data-category="techfun">Tech+Fun</button>
+            </div>
+          </header>
+
+          <!-- Display line -->
+          <div class="status-display">
+            <span class="status-prefix">…</span>
+            <span class="status-rotator" aria-live="polite" aria-atomic="true">
+              <span class="status-phrase role role-enter">debugging code</span>
+            </span>
+          </div>
+
+          <!-- Optional: hint line -->
+          <p class="status-hint">Tip: switch categories — it shuffles the vibe.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======================= SKILLS ======================= -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <h2 id="skills-title" class="section-title">Skills</h2>
+
+        <ul class="skills-grid">
+          <li><button class="skill nm-circle" aria-label="Python" data-press><span class="skill-ico" aria-hidden="true">🐍</span><span class="skill-name">Python</span></button></li>
+          <li><button class="skill nm-circle" aria-label="JavaScript" data-press><span class="skill-ico" aria-hidden="true">🧠</span><span class="skill-name">JavaScript</span></button></li>
+          <li><button class="skill nm-circle" aria-label="HTML5" data-press><span class="skill-ico" aria-hidden="true">📄</span><span class="skill-name">HTML5</span></button></li>
+          <li><button class="skill nm-circle" aria-label="CSS3" data-press><span class="skill-ico" aria-hidden="true">🎨</span><span class="skill-name">CSS3</span></button></li>
+          <li><button class="skill nm-circle" aria-label="C++" data-press><span class="skill-ico" aria-hidden="true">💻</span><span class="skill-name">C++</span></button></li>
+          <li><button class="skill nm-circle" aria-label="React.js & Next.js" data-press><span class="skill-ico" aria-hidden="true">⚛️</span><span class="skill-name">React.js & Next.js</span></button></li>
+          <li><button class="skill nm-circle" aria-label="TailwindCSS & shadcn/ui" data-press><span class="skill-ico" aria-hidden="true">🌬️</span><span class="skill-name">TailwindCSS & shadcn/ui</span></button></li>
+          <li><button class="skill nm-circle" aria-label="UI/UX Design Principles" data-press><span class="skill-ico" aria-hidden="true">🎯</span><span class="skill-name">UI/UX Design Principles</span></button></li>
+          <li><button class="skill nm-circle" aria-label="Responsive Web Design" data-press><span class="skill-ico" aria-hidden="true">📱</span><span class="skill-name">Responsive Web Design</span></button></li>
+          <li><button class="skill nm-circle" aria-label="Prototyping & Wireframing" data-press><span class="skill-ico" aria-hidden="true">📝</span><span class="skill-name">Prototyping & Wireframing</span></button></li>
+          <li><button class="skill nm-circle" aria-label="Graphic Design" data-press><span class="skill-ico" aria-hidden="true">🎨</span><span class="skill-name">Graphic Design</span></button></li>
+          <li><button class="skill nm-circle" aria-label="Git & GitHub" data-press><span class="skill-ico" aria-hidden="true">🔧</span><span class="skill-name">Git & GitHub</span></button></li>
+          <li><button class="skill nm-circle" aria-label="VS Code & Dev Tools" data-press><span class="skill-ico" aria-hidden="true">🖥️</span><span class="skill-name">VS Code & Dev Tools</span></button></li>
+          <li><button class="skill nm-circle" aria-label="Notion / Project Management Systems" data-press><span class="skill-ico" aria-hidden="true">📋</span><span class="skill-name">Notion / Project Management Systems</span></button></li>
+          <li><button class="skill nm-circle" aria-label="Basic n8n / automation workflows" data-press><span class="skill-ico" aria-hidden="true">🤖</span><span class="skill-name">Basic n8n / automation workflows</span></button></li>
+          <li><button class="skill nm-circle" aria-label="Data Structures & Algorithms" data-press><span class="skill-ico" aria-hidden="true">🗂️</span><span class="skill-name">Data Structures & Algorithms</span></button></li>
+          <li><button class="skill nm-circle" aria-label="Mathematical Modeling / Simulations" data-press><span class="skill-ico" aria-hidden="true">📊</span><span class="skill-name">Mathematical Modeling / Simulations</span></button></li>
+          <li><button class="skill nm-circle" aria-label="Analytical Problem-Solving" data-press><span class="skill-ico" aria-hidden="true">🧩</span><span class="skill-name">Analytical Problem-Solving</span></button></li>
+          <li><button class="skill nm-circle" aria-label="Team Collaboration & Leadership" data-press><span class="skill-ico" aria-hidden="true">🤝</span><span class="skill-name">Team Collaboration & Leadership</span></button></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ======================= PROJECTS ======================= -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 id="projects-title" class="section-title">Projects</h2>
+
+        <div class="projects-grid">
+          <!-- Project Card 2 -->
+          <article class="project-card surface tilt reveal">
+            <div class="project-image-placeholder nm-soft" style="width:100%;height:140px;display:flex;align-items:center;justify-content:center;background:var(--primary-bg);border-radius:var(--radius);margin-bottom:18px;box-shadow:var(--elev-sm);overflow:hidden;">
+              <img src="assets/thrive.png" alt="Thrive Study Tracker Screenshot" style="max-width:100%;max-height:100%;object-fit:cover;border-radius:var(--radius);" />
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Thirve - Study Tracker</h3>
+              <p class="project-desc">
+                A minimalist study dashboard with streaks, focus sessions, and gentle animations.
+              </p>
+              <ul class="tags">
+                <li>HTML</li><li>CSS</li><li>JS</li>
+              </ul>
+            </div>
+            <div class="project-actions">
+              <a class="btn nm-btn ghost" href="#" target="_blank" rel="noopener" data-press aria-label="View demo Study Tracker">Demo</a>
+              <a class="btn nm-btn" href="#" target="_blank" rel="noopener" data-press aria-label="View source Study Tracker">GitHub</a>
+            </div>
+          </article>
+          <!-- Project Card 4 -->
+          <article class="project-card surface tilt reveal">
+            <div class="project-image-placeholder nm-soft" style="width:100%;height:140px;display:flex;align-items:center;justify-content:center;background:var(--primary-bg);border-radius:var(--radius);margin-bottom:18px;box-shadow:var(--elev-sm);overflow:hidden;">
+              <img src="assets/pytracer_ss.jpg" alt="PyTracing Maze Game Screenshot" style="max-width:100%;max-height:100%;object-fit:cover;border-radius:var(--radius);" />
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">PyTracing Maze Game</h3>
+              <p class="project-desc">
+                A Python, Pygame, and NumPy ray-traced maze game featuring dynamic lighting and enemy pursuit.
+              </p>
+              <ul class="tags">
+                <li>Python</li><li>Pygame</li><li>NumPy</li>
+              </ul>
+            </div>
+            <div class="project-actions">
+              <a class="btn nm-btn ghost" href="#" target="_blank" rel="noopener" data-press aria-label="View demo PyTracing Maze Game">Demo</a>
+              <a class="btn nm-btn" href="#" target="_blank" rel="noopener" data-press aria-label="View source PyTracing Maze Game">GitHub</a>
+            </div>
+          </article>
+          <!-- Project Card 5 -->
+          <article class="project-card surface tilt reveal">
+            <div class="project-image-placeholder nm-soft" style="width:100%;height:140px;display:flex;align-items:center;justify-content:center;background:var(--primary-bg);border-radius:var(--radius);margin-bottom:18px;box-shadow:var(--elev-sm);overflow:hidden;">
+              <img src="assets/chess_ai.jpg" alt="Python Chess Ai Screenshot" style="max-width:100%;max-height:100%;object-fit:cover;border-radius:var(--radius);" />
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Python Chess Ai</h3>
+              <p class="project-desc">
+                A strategic chess engine built with Python, Minimax algorithm, and Alpha-Beta pruning.
+              </p>
+              <ul class="tags">
+                <li>Python</li><li>Minimax Algorithm</li><li>Alpha-Beta Pruning</li><li>Pygame</li>
+              </ul>
+            </div>
+            <div class="project-actions">
+              <a class="btn nm-btn ghost" href="#" target="_blank" rel="noopener" data-press aria-label="View demo Python Chess Ai">Demo</a>
+              <a class="btn nm-btn" href="#" target="_blank" rel="noopener" data-press aria-label="View source Python Chess Ai">GitHub</a>
+            </div>
+          </article>
+
+          <!-- View More (embedded) -->
+          <div class="projects-more reveal">
+            <a class="nm-embed-btn" href="./projects.html" data-press aria-label="View more projects">
+              <span class="embed-icon" aria-hidden="true"></span>
+              <span>View More</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= RESUME CTA ======================= -->
+    <section class="section" id="resume" aria-labelledby="resume-title">
+      <div class="container">
+        <div class="resume-cta surface reveal">
+          <div class="resume-copy">
+            <h2 id="resume-title" class="resume-title">Download my resume</h2>
+            <p class="resume-sub">Sleek, single-page PDF — updated regularly.</p>
+          </div>
+
+          <div class="resume-actions">
+            <!-- Replace href with your real file later, e.g. assets/Avnoor_Resume.pdf -->
+            <a class="btn nm-btn primary resume-download" href="assets/Avnoor_Resume.pdf" data-press aria-label="Download resume" download>
+              <span class="dl-icon" aria-hidden="true">⬇️</span>
+              <span class="dl-label">Download</span>
+              <span class="dl-progress" aria-hidden="true"></span>
+            </a>
+
+            <!-- Optional: a “View Online” button that opens the same PDF without download -->
+            <a class="btn nm-btn ghost" href="assets/Avnoor_Resume.pdf" data-press aria-label="View resume online" target="_blank" rel="noopener">
+              <span>View Online</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ======================= EXPERIENCE ======================= -->
+    <section class="section" id="experience" aria-labelledby="exp-title">
+      <div class="container">
+        <h2 id="exp-title" class="section-title">Experience</h2>
+
+        <div class="timeline">
+          <div class="track surface nm-inset" aria-hidden="true"></div>
+
+          <article class="exp-card surface reveal">
+            <div class="exp-dot nm-circle" aria-hidden="true"></div>
+            <div style="position: relative; display: flex; align-items: center; justify-content: space-between;">
+              <h3 style="margin: 0;">Assistant Tutor — Kumon</h3>
+              <button id="kumonBtn" class="nm-circle" style="width:36px;height:36px;display:flex;align-items:center;justify-content:center;background:var(--primary-bg);box-shadow:var(--inset-sm);border:none;cursor:pointer;position:relative;" aria-label="Join Kumon">
+                <span id="kumonApply" style="display:none;margin-right:10px;font-size:0.95rem;white-space:nowrap;transition:opacity .2s;">Join Today!</span>
+                <img src="./assets/kumon_light.png" alt="Kumon Logo" style="width:22px;height:22px;object-fit:contain;border-radius:50%;" />
+              </button>
+            </div>
+            <p class="exp-meta">2022 — Present</p>
+            <p>Helped students strengthen math fundamentals and problem-solving habits through structured practice.</p>
+          </article>
+
+          <article class="exp-card surface reveal">
+            <div class="exp-dot nm-circle" aria-hidden="true"></div>
+            <div style="position: relative; display: flex; align-items: center; justify-content: space-between;">
+              <h3 style="margin: 0;">Co-founder — SkilledStack</h3>
+              <button id="skilledstackBtn" class="nm-circle" style="width:36px;height:36px;display:flex;align-items:center;justify-content:center;background:var(--primary-bg);box-shadow:var(--inset-sm);border:none;cursor:pointer;position:relative;" aria-label="Visit SkilledStack">
+                <span id="skilledstackApply" style="display:none;margin-right:10px;font-size:0.95rem;white-space:nowrap;transition:opacity .2s;">Visit our Website!</span>
+                <img src="./assets/logo.png" alt="SkilledStack Logo" style="width:22px;height:22px;object-fit:contain;border-radius:50%;" />
+              </button>
+            </div>
+            <p class="exp-meta">2024 — Present</p>
+            <p>Built and shipped websites for local businesses with a focus on clean design and fast performance.</p>
+          </article>
+
+          <article class="exp-card surface reveal">
+            <div class="exp-dot nm-circle" aria-hidden="true"></div>
+            <div style="position: relative; display: flex; align-items: center; justify-content: space-between;">
+              <h3 style="margin: 0;">Finance Lead — Flowboat</h3>
+              <button id="flowboatBtn" class="nm-circle" style="width:36px;height:36px;display:flex;align-items:center;justify-content:center;background:var(--primary-bg);box-shadow:var(--inset-sm);border:none;cursor:pointer;position:relative;" aria-label="Apply to Flowboat">
+                <span id="flowboatApply" style="display:none;margin-right:10px;font-size:0.95rem;white-space:nowrap;transition:opacity .2s;">Apply to Flowboat!</span>
+                <img src="./assets/flowwww.png" alt="Flowboat Logo" style="width:22px;height:22px;object-fit:contain;border-radius:50%;" />
+              </button>
+              <span id="flowboatApply" style="display:none;position:absolute;top:40px;right:0;background:var(--primary-bg);box-shadow:var(--elev-sm);border-radius:var(--radius);padding:8px 16px;font-size:0.95rem;z-index:10;">Apply to Flowboat!</span>
+            </div>
+            <p class="exp-meta">2024 — Present</p>
+            <p>Supported sponsorships and partnerships; contributed to student entrepreneurship programming.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= CONTACT ======================= -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title" class="section-title">Contact</h2>
+
+        <form class="contact-form surface reveal" id="contactForm" novalidate>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input class="nm-input" type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input class="nm-input" type="email" id="email" name="email" placeholder="you@example.com" required />
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea class="nm-input" id="message" name="message" placeholder="Say hello..." rows="5" required></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn nm-btn" data-press aria-label="Send message">Send</button>
+          </div>
+
+          <p class="form-note" role="status" aria-live="polite" id="formStatus"></p>
+        </form>
+
+        <div class="socials reveal">
+            <a class="icon-btn nm-circle" href="https://github.com/avkomplement" aria-label="GitHub profile" target="_blank" rel="noopener">
+            <span aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="display:block;">
+                <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.51 2.87 8.34 6.84 9.7.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.36-3.37-1.36-.45-1.17-1.1-1.48-1.1-1.48-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.65.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.38-2.03 1.02-2.75-.1-.26-.44-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.38 9.38 0 012.5-.34c.85 0 1.71.11 2.5.34 1.91-1.33 2.75-1.05 2.75-1.05.54 1.41.2 2.45.1 2.71.63.72 1.02 1.63 1.02 2.75 0 3.94-2.34 4.81-4.57 5.07.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.58.69.48A10.01 10.01 0 0022 12.26C22 6.58 17.52 2 12 2z"/>
+              </svg>
+            </span>
+          </a>
+          <a class="icon-btn nm-circle" href="https://www.instagram.com/avnoors4ndhu/" aria-label="Instagram profile" target="_blank" rel="noopener">
+            <span aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="display:block;">
+                <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zm4.25 3.25a5.25 5.25 0 110 10.5 5.25 5.25 0 010-10.5zm0 1.5a3.75 3.75 0 100 7.5 3.75 3.75 0 000-7.5zm5.13.88a1.13 1.13 0 11-2.25 0 1.13 1.13 0 012.25 0z"/>
+              </svg>
+            </span>
+          </a>
+          <a class="icon-btn nm-circle" href="https://x.com/av_pbx" aria-label="X profile" target="_blank" rel="noopener">
+            <span aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="display:block;">
+                  <path d="M18.244 2H21.5l-7.27 8.39L22 22h-5.804l-4.544-6.073L6.5 22H3.244l7.78-8.98L2 2h5.805l4.135 5.672L18.244 2zm-2.036 17.33h1.347L7.884 4.77H6.455l9.753 14.56z"/>
+                </svg>
+            </span>
+          </a>
+          <a class="icon-btn nm-circle" href="#" aria-label="Gmail">
+            <span aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="display:block;">
+                <path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 2v.01L12 13 4 6.01V6h16zm-16 12V8.24l7.12 6.36a1 1 0 001.36 0L20 8.24V18H4z"/>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer surface nm-inset">
+    <div class="container footer-inner">
+  <small>© <span id="year"></span> Avnoor • Built with HTML, CSS, JS & Midnight Snacks • Neumorphic UI</small>
+    </div>
+  </footer>
+
+  <script defer src="/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+.nm-circle #flowboatApply,
+.nm-circle #skilledstackApply,
+.nm-circle #kumonApply {
+  color: #111;
+}
+html[data-theme="dark"] .nm-circle #flowboatApply,
+html[data-theme="dark"] .nm-circle #skilledstackApply,
+html[data-theme="dark"] .nm-circle #kumonApply {
+  color: #fff;
+}
